@@ -58,5 +58,11 @@ git push --tags origin
 
 ##### 选择不同的版本
 ```
+//更新到最新版本
+go get -u github.com/ericsource/testmod
+//go.mod文件结果
 require github.com/robteix/testmod v1.0.1
+
+//更新到指定版本
+go get github.com/ericsource/testmod@v1.0.0
 ```
