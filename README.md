@@ -43,18 +43,17 @@ go mod tidy
 go run mymod.go
 ```
 
-##### 修复版本
+#####  更新版本
 ```
-// Hi returns a friendly greeting
-func Hi(name string) string {
--   return fmt.Sprintf("Hi, %s", name)
-+   return fmt.Sprintf("Hi, %s!", name)
+//添加新方法
+func New(name string) string {
+    return fmt.Sprintf("New, %s", name)
 }
 ```
 ```
-git commit -m "Emphasize our friendliness" testmod.go
+git commit -m "add New func" testmod.go
 git tag v1.0.1
-git push --tags origin v1
+git push --tags origin
 ```
 
 ##### 选择不同的版本
